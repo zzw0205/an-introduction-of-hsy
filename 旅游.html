@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="UTF-8">
+<title>ÎÞ±êÌâÎÄµµ</title>
+<style type="text/css">
+body {
+    background-color: #FFE7CB;
+    color: #DD4600;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+a:link {
+    color: #DD4600;
+}
+</style>
+	<title>css实现轮播效果</title>
+    <style type="text/css">
+        .one {
+            position: absolute;
+            width: 1200px;
+            height: 800px;
+            overflow: hidden;
+        }
+        .one_cantent img {
+            width: 500px;
+            height: 300px;
+            float: left;
+        }
+        .one_cantent {
+            width: 2500px;
+            height: 900px;
+            position: absolute;
+            left: 0px;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move {
+            0% {
+                left: 0px;
+            }
+            25% {
+                left: -500px;
+            }
+            50% {
+                left: -1000px;
+            }
+            75% {
+                left: -1500px;
+            }
+            100% {
+                left: -2000px
+            }
+        }
+    </style>
+</head>
+
+<body>
+<p style="font-size: xx-large; text-align: center;">旅游</p>
+<p>很喜欢旅游，无论是很松弛的闲逛还是特种兵行程，用脚步去探索一块新的世界总是件很酷的事情</p>
+<p>拍照技术不佳hh，美丽的风景，还是建议大家亲自去欣赏吧！</p>
+<p>（<a href="index.html">点我回到主页</a>）&nbsp;</p>
+	<p>（<a href="about myself 索引.html">点我回到索引页</a>）&nbsp;</p>
+
+		  <div class="one">
+        <div class="one_cantent">
+            <img src="./image/3671701171300_.pic_hd.jpg">
+            <img src="./image/3651701171297_.pic_hd.jpg">
+            <img src="./image/3731701171386_.pic_hd.jpg">
+            <img src="./image/3701701171305_.pic_hd.jpg">
+            <img src="./image/3661701171298_.pic_hd.jpg">
+        </div>
+    </div>
+</body>
+</html>
